@@ -1,52 +1,83 @@
-/* Reset */
+/* 🔄 Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* 🌍 Base */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #1e1e2f, #2c2c3e);
-  color: #f0f0f0;
-  padding: 2rem;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 0;
+}
+
+/* 🧠 Header */
+header {
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 40px 20px;
   text-align: center;
 }
 
-/* Header */
 header h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
   color: #ffcc00;
   animation: fadeIn 1.5s ease-in-out;
 }
 
 .slogan {
   font-size: 1.2rem;
-  margin-top: 0.5rem;
-  color: #ffcc00;
+  color: #ffd700;
   animation: slideUp 1.5s ease-in-out;
 }
 
-/* Sections */
-.intro {
-  margin: 2rem 0;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  animation: fadeIn 2s ease-in;
-}
-
-.liens {
+/* 🧭 Navigation */
+nav ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 2rem;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
 }
 
-/* Boutons */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* 📄 Main Content */
+main {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1e1e2f;
+}
+
+/* 📬 Bouton contact */
 .btn {
+  display: inline-block;
+  padding: 12px 24px;
   background-color: #ffcc00;
   color: #1e1e2f;
-  padding: 0.8rem 1.5rem;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
@@ -58,14 +89,16 @@ header h1 {
   box-shadow: 0 0 10px #ffcc00;
 }
 
-/* Footer */
+/* 🧱 Footer */
 footer {
-  margin-top: 3rem;
+  background-color: #1e1e2f;
+  color: #ccc;
+  text-align: center;
+  padding: 30px 20px;
   font-size: 0.9rem;
-  color: #aaa;
 }
 
-/* Animations */
+/* ✨ Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
