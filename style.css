@@ -1,5 +1,5 @@
 /* 🔄 Reset */
-* {
+* { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,6 +12,7 @@ body {
   color: #333;
   line-height: 1.6;
   padding: 0;
+  overflow-x: hidden; /* ✅ Ajout pour éviter le débordement horizontal */
 }
 
 /* 🧠 Header */
@@ -107,4 +108,37 @@ footer {
 @keyframes slideUp {
   from { transform: translateY(30px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
+}
+
+/* 📱 Responsive Android & petits écrans */
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .slogan {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 40px 15px;
+  }
 }
